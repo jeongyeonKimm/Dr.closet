@@ -42,8 +42,8 @@ class HomeScreen extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
-                elevation: 25,
-                shadowColor: const Color(0xFF6291E8).withOpacity(0.5),
+                elevation: 24,
+                shadowColor: const Color(0xFF6B97E9).withOpacity(0.5),
               ),
               child: const Text(
                 '여성',
@@ -66,8 +66,8 @@ class HomeScreen extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30),
                 ),
-                elevation: 25,
-                shadowColor: const Color(0xFF6291E8).withOpacity(0.5),
+                elevation: 24,
+                shadowColor: const Color(0xFF6B97E9).withOpacity(0.5),
               ),
               child: const Text(
                 '남성',
@@ -75,7 +75,7 @@ class HomeScreen extends StatelessWidget {
                   fontSize: 30,
                 ),
               ),
-            )
+            ),
           ],
         ),
       ),
