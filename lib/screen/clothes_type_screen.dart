@@ -1,16 +1,14 @@
-import 'package:dr_closet/screen/clothes_type_screen.dart';
+import 'package:dr_closet/component/custom_button.dart';
 import 'package:flutter/material.dart';
 
-import '../component/custom_button.dart';
-
-class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+class ClothesTypeScreen extends StatefulWidget {
+  const ClothesTypeScreen({super.key});
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  State<ClothesTypeScreen> createState() => _ClothesTypeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _ClothesTypeScreenState extends State<ClothesTypeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +26,7 @@ class _HomeScreenState extends State<HomeScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: const [
                 Text(
-                  '성별을 선택해주세요',
+                  '매칭할 옷의 분류를\n선택해주세요',
                   style: TextStyle(
                     fontSize: 30,
                     color: Color(0xFF6B97E9),
@@ -38,31 +36,23 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
             const SizedBox(
-              height: 138,
+              height: 81,
             ),
             CustomButton(
-              textContent: '여성',
-              padding: 27.0,
-              onPressed: onPressed,
+              textContent: '상의',
+              padding: 58.0,
+              onPressed: () {},
             ),
             const SizedBox(
               height: 60,
             ),
             CustomButton(
-              textContent: '남성',
-              padding: 27.0,
-              onPressed: onPressed,
+              textContent: '하의',
+              padding: 58.0,
+              onPressed: () {},
             ),
           ],
         ),
-      ),
-    );
-  }
-
-  onPressed() {
-    Navigator.of(context).push(
-      MaterialPageRoute<int>(
-        builder: (context) => const ClothesTypeScreen(),
       ),
     );
   }
